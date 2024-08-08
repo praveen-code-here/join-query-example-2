@@ -24,6 +24,11 @@ CREATE TABLE user
     name     VARCHAR(100) NOT NULL,
     password VARCHAR(300) NOT NULL
 );
+create table "user"(
+                       username varchar(100) primary key ,
+                       name varchar(200),
+                       password varchar(300)
+);
 
 CREATE TABLE `order`
 (
