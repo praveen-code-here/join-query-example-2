@@ -1,5 +1,4 @@
-CREATE
-DATABASE dep12_join_example_2;
+CREATE DATABASE dep12_join_example_2;
 
 USE
 dep12_join_example_2;
@@ -24,6 +23,12 @@ CREATE TABLE user
     name     VARCHAR(100) NOT NULL,
     password VARCHAR(300) NOT NULL
 );
+INSERT INTO "user" (username, name, password) VALUES
+                                                  ('john_doe', 'John Doe', 'password123'),
+                                                  ('jane_smith', 'Jane Smith', 'securepassword456'),
+                                                  ('alice_jones', 'Alice Jones', 'password789'),
+                                                  ('bob_brown', 'Bob Brown', 'passw0rd101112'),
+                                                  ('charlie_black', 'Charlie Black', 'mypassword131415');
 create table "user"(
                        username varchar(100) primary key ,
                        name varchar(200),
